@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+<ImageView
+    android:src="@drawable/invite_photo"
+    android:layout_width="50dp"
+    android:layout_height="50dp" />
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_name"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名称"/>
+        <TextView
+            android:id="@+id/tv_reason"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原因"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="接受"/>
+    <Button
+        android:id="@+id/bt_reject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拒绝"/>
+</LinearLayout>

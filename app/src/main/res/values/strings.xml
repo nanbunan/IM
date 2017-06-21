@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IM</string>
+    <string name="setting_gesture_state_off">关闭</string>
+    <string name="clear_tip">提示</string>
+    <string name="clear_success">清理成功</string>
+    <string name="okk">确定</string>
+    <array name="title">
+        <item>登陆</item>
+        <item>注册</item>
+    </array>
+</resources>

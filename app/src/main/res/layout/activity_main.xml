@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.im.controller.activity.MainActivity">
+
+    <View
+        android:id="@+id/split_line"
+        android:layout_above="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <!-- 在哪 -->
+        <RelativeLayout
+            android:id="@+id/btn_container_conversation_zaina"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:background="@android:color/transparent"
+                android:id="@+id/btn_shouye"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/shouye_bg"
+                android:onClick="onTabClicked"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="会话"
+                android:textColor="@color/textcolor_bg"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+        <!-- 说说 -->
+        <RelativeLayout
+            android:id="@+id/btn_container_gushi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <Button
+
+                android:background="@android:color/transparent"
+                android:id="@+id/btn_jiaoyi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/jiaoyiba_bg"
+                android:onClick="onTabClicked"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="好友"
+                android:textColor="@color/textcolor_bg"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+        <!-- 设置 -->
+        <RelativeLayout
+            android:id="@+id/btn_container_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+
+                android:background="@android:color/transparent"
+                android:id="@+id/btn_wode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/wode_bg"
+                android:onClick="onTabClicked"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="我的"
+                android:textColor="@color/textcolor_bg"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/split_line" />
+
+</RelativeLayout>
